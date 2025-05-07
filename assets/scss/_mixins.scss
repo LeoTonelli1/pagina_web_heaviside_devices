@@ -1,0 +1,26 @@
+// Mixin para animaciones
+@mixin animate($property, $duration, $timing-function: ease) {
+  transition: $property $duration $timing-function;
+}
+
+// Extend para sombras
+%custom-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// Map para colores
+$theme-colors: (
+  "primary": #007bff,
+  "secondary": #6c757d,
+  "success": #28a745,
+  "danger": #dc3545,
+  "warning": #ffc107,
+  "info": #17a2b8,
+  "light": #f8f9fa,
+  "dark": #343a40
+);
+
+// Función para obtener colores del mapa
+@function get-color($key) {
+  @return map-get($theme-colors, $key);
+} 

@@ -1,0 +1,22 @@
+/* Contact Grid */
+.company-info {
+    background-color: $form-inner-background;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px $light-shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        p {
+            margin: 0;
+            padding: 0.5rem 0;
+        }
+    }
+} 

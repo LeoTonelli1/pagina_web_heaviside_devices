@@ -1,0 +1,17 @@
+/* Header */ 
+/* Navbar */
+
+.navbar {
+    background-color: $white-text; 
+}
+.navbar a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    color: $black-text !important; 
+}
+
+/* No entiendo porque no me cambia a color negro */
+.dropdown-menu .dropdown-item {
+    color: $black-text !important; 
+}

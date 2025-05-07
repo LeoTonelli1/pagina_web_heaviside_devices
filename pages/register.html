@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | IDD</title>
+    <meta name="description" content="Create your Inverter Drive Design account to start using our powerful inverter circuit design and simulation software">
+    <meta name="keywords" content="Register IDD, Create Account, Sign Up, Inverter Design Registration">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js" defer></script>
+</head>
+<body class="contact">
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg" style="padding-top: 0; padding-bottom: 0;">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="../index.html" style="padding: 0; margin: 0;">
+                    <img src="../assets/img/logo.png" alt="Logo" style="height: 100px;">
+                </a>
+                <!-- Mobile menu button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navigation bar content -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-0 d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="../index.html">
+                                <img src="../assets/img/home.png" alt="Home Icon" style="height: 50px;">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="../index.html#products">Products & Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="../index.html#get-software">Get Software</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./freetrial.html">Free Trial</a>
+                        </li>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="nav-link d-flex align-items-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/img/user.png" alt="User Icon" style="height: 50px;">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bold" href="./login.html">Login</a></li>
+                                <li><a class="dropdown-item fw-bold" href="./register.html">Register</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="section" id="contact">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 d-flex align-items-center justify-content-center">
+                        <div class="form-container">
+                            <h3 class="main-color">Sing up</h3>
+                            <div id="error-message" class="alert alert-danger d-none" role="alert">
+                                Please complete all required fields.
+                            </div>
+                            <form id="registerForm" action="">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" maxlength="50" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="password" maxlength="50" placeholder="Password" required>
+                                        <button class="btn btn-outline-secondary border-0" type="button" id="togglePassword" style="background: transparent;">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="confirmPassword" maxlength="50" placeholder="Repeat Password" required>
+                                        <button class="btn btn-outline-secondary border-0" type="button" id="toggleConfirmPassword" style="background: transparent;">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" maxlength="50" placeholder="First Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="lastName" maxlength="50" placeholder="Last Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone" required>
+                                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" class="form-control" id="birthDate" 
+                                        max="2024-12-31"
+                                        min="1900-01-01"
+                                        title="Please enter your date of birth"
+                                        placeholder="Date of Birth"
+                                        required>
+                                </div>
+                                <button type="submit" class="custom-button">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 class="white-text">Products & Services</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="freetrial.html">Free Trial</a></li>
+                        <li><a href="#products">Simple Version</a></li>
+                        <li><a href="#products">HPC Pack (High Performance Computing)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="white-text">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Sales</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="white-text">Follow us</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <img src="../assets/img/logo_color_inver.png" alt="Logo Color Inver" style="height: 200px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <hr>
+                    <p class="legal-links d-inline float-start">&copy; 2025 Copyright IDD</p>
+                    <ul class="list-inline float-end">
+                        <li class="legal-links d-inline"><a href="#">Privacy Notice</a></li>
+                        <li class="legal-links d-inline"><a href="#">Terms and Conditions</a></li>
+                        <li class="legal-links d-inline"><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        const phoneInput = document.getElementById('phoneNumber');
+        const iti = window.intlTelInput(phoneInput, {
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            separateDialCode: true,
+            initialCountry: "auto",
+            geoIpLookup: function(callback) {
+                fetch("https://ipapi.co/json")
+                    .then(res => res.json())
+                    .then(data => callback(data.country_code))
+                    .catch(() => callback("us"));
+            },
+            preferredCountries: ["ar", "us", "gb", "es"]
+        });
+
+        // Validación del número de teléfono
+        phoneInput.addEventListener('blur', function() {
+            if (phoneInput.value.trim()) {
+                if (iti.isValidNumber()) {
+                    phoneInput.classList.remove('is-invalid');
+                    phoneInput.classList.add('is-valid');
+                } else {
+                    phoneInput.classList.remove('is-valid');
+                    phoneInput.classList.add('is-invalid');
+                }
+            }
+        });
+
+        // Antes de enviar el formulario, asegúrate de obtener el número completo
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            const phoneNumber = iti.getNumber();
+            // Aquí puedes usar phoneNumber que incluirá el código de país
+        });
+    </script>
+</body>
+</html>

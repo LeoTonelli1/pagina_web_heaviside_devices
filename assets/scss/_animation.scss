@@ -1,0 +1,40 @@
+// Keyframes para la animación de fade-in
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Clase base para elementos animados
+.animate-on-scroll {
+    opacity: 0;
+    will-change: opacity, transform;
+    transform: translateY(20px);
+}
+
+// Clase que se agrega cuando el elemento es visible
+.animate-on-scroll.is-visible {
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+// Clases de retraso para las animaciones
+.delay-1.is-visible {
+    animation-delay: 0.3s !important;
+}
+
+.delay-2.is-visible {
+    animation-delay: 0.6s !important;
+}
+
+.delay-3.is-visible {
+    animation-delay: 0.9s !important;
+}
+
+.delay-4.is-visible {
+    animation-delay: 1.2s !important;
+}

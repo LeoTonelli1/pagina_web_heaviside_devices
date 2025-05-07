@@ -1,0 +1,56 @@
+/* Forms*/ 
+
+body.contact main {
+    background-color: $form-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: $form-inner-background;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px $light-shadow;
+    width: 300px;
+    margin: 20px;
+
+    .input-group {
+        position: relative;
+        
+        .btn-outline-secondary {
+            &:hover {
+                i {
+                    color: $primary-color;
+                    transition: color 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:hover,
+.form-container textarea:hover,
+.form-container select:hover {
+    border-color: $primary-color;
+}
+
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 5px rgba($primary-color, 0.3);
+}

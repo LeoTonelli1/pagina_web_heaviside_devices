@@ -1,0 +1,132 @@
+/* Media query Desktop */
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 5rem !important;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    h2 {
+        font-size: 2.5rem !important;
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+    h3 {
+        font-size: 1.8rem !important;
+        margin-bottom: 1rem;
+    }
+    h4 {
+        font-size: 1.2rem !important;
+        margin-bottom: 0.8rem;
+    }
+    
+    #cooming\ soon {
+        min-height: 900px !important;
+        padding-bottom: 0;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+}
+
+
+  /* Media Query Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+    header, main, footer {
+    text-align: left;
+    }
+    h1 {
+        font-size: 3.5rem !important;
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+    h2 {
+        font-size: 2rem !important;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.8rem;
+    }
+    h4 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.6rem;
+    }
+    
+    /* Ajustes específicos para tablet */
+    .navbar-brand img {
+        height: 70px !important;
+    }
+    
+    /* Ajuste para secciones con imágenes de fondo */
+    #cooming\ soon {
+        min-height: 400px !important;
+        padding-bottom: 2.5rem;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .footer {
+        padding-top: 2.5rem;
+    }
+}
+
+  /* Media Query Móvil */
+@media (max-width: 599px) {
+    h1 {
+        font-size: 2.5rem !important;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    h2 {
+        font-size: 1.8rem !important;
+        text-align: center;
+        margin-bottom: 0.8rem;
+    }
+    h3 {
+        font-size: 1.4rem !important;
+        margin-bottom: 0.6rem;
+    }
+    h4 {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Ajustes específicos para móvil */
+    .navbar-brand img {
+        height: 50px !important;
+    }
+    
+    /* Ajuste para secciones con imágenes de fondo */
+    #cooming\ soon {
+        min-height: 250px !important;
+        padding-bottom: 2.5rem;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    /* Ajuste para el footer en móvil */
+    .footer {
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .footer h4 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.8rem;
+    }
+    
+    .footer a {
+        font-size: 0.9rem !important;
+    }
+}
+
+

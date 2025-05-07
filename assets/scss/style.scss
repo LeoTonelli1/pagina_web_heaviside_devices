@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'mediaqueries';
+@import 'navbar';
+@import 'custombuttom';
+@import 'footer';
+@import 'forms';
+@import 'animation';
+@import 'contact-grid';
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Body */ 
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+    line-height: 1.6;
+    background-color: $background-color;
+    scroll-behavior: smooth;
+    color: $black-text;
+    font-size: 1rem;
+}
+
+h1.main-color, h2.main-color, h3.main-color,h4.main-color, .navbar a:hover, .footer a:hover {
+    color: $primary-color !important;
+    text-decoration: none;
+}
+
+p.black-text, li.black-text, ul.black-text {
+    color: $black-text;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1rem;
+}
+
+p.white-text, li.white-text, ul.white-text {
+    color: $white-text;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1rem;
+}
+
+/* Section: Products*/ 
+#products {
+    background-color: $products-background;
+}
+
+
